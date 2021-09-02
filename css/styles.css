@@ -11781,4 +11781,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #fff;
   background-color: #3f51b5 !important;
 }
-/* Crousel */
+.carousel-item.active, .carousel-item-next, .carousel-item-prev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  margin: 5px 10px;
+}
+.active-testimonial{
+  display: block;
+}

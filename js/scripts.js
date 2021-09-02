@@ -6,34 +6,7 @@
 //
 // Scripts
 // 
-$('#carouselExample').on('slide.bs.carousel', function (e) {
 
-    /*
-
-    CC 2.0 License Iatek LLC 2018
-    Attribution required
-    
-    */
-
-
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 7;
-    var totalItems = $('.carousel-item').length;
-    
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
-        }
-    }
-});
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -85,28 +58,27 @@ function get($){
 function testimonialsChange(elem){
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
-  if(elem.getAttribute('active') ===  'crousel1'){
-      console.log(get('#crousel1'))
-    get('#crousel1')[0].classList.remove('active')
-    get('#crousel2')[0].classList.add('active')
-    next.setAttribute('active','crousel2')
-    prev.setAttribute('active','crousel2')
-}else if (elem.getAttribute('active') ===  'crousel2'){
-    get('#crousel2')[0].classList.remove('active')
-    get('#crousel3')[0].classList.add('active')
-    next.setAttribute('active','crousel3')
-    prev.setAttribute('active','crousel3')
-}else if (elem.getAttribute('active') ===  'crousel3'){
-    get('#crousel3')[0].classList.remove('active')
-    get('#crousel1')[0].classList.add('active')
-    next.setAttribute('active','crousel1')
-    prev.setAttribute('active','crousel1')
+  if(elem.getAttribute('active-testimonial') ===  'crousel1'){
+    get('#crousel1')[0].classList.remove('active-testimonial')
+    get('#crousel2')[0].classList.add('active-testimonial')
+    next.setAttribute('active-testimonial','crousel2')
+    prev.setAttribute('active-testimonial','crousel2')
+}else if (elem.getAttribute('active-testimonial') ===  'crousel2'){
+    get('#crousel2')[0].classList.remove('active-testimonial')
+    get('#crousel3')[0].classList.add('active-testimonial')
+    next.setAttribute('active-testimonial','crousel3')
+    prev.setAttribute('active-testimonial','crousel3')
+}else if (elem.getAttribute('active-testimonial') ===  'crousel3'){
+    get('#crousel3')[0].classList.remove('active-testimonial')
+    get('#crousel1')[0].classList.add('active-testimonial')
+    next.setAttribute('active-testimonial','crousel1')
+    prev.setAttribute('active-testimonial','crousel1')
 }
 else{
-    get('#crousel3')[0].classList.remove('active')
-    get('#crousel1')[0].classList.add('active')
-    next.setAttribute('active','crousel1')
-    prev.setAttribute('active','crousel1')
+    get('#crousel3')[0].classList.remove('active-testimonial')
+    get('#crousel1')[0].classList.add('active-testimonial')
+    next.setAttribute('active-testimonial','crousel1')
+    prev.setAttribute('active-testimonial','crousel1')
   }
 
 }
