@@ -11308,6 +11308,7 @@ p {
     padding: 9rem 0;
   }
 }
+
 .video {
   display: flex;
   justify-content: center;
@@ -11315,8 +11316,8 @@ p {
   flex-wrap: wrap;
   width: 100vw;
 }
-.video video{
-  border-radius: 10px;
+.video-js{
+  flex-basis: 40%;
 }
 .btn-xl {
   padding: 1.25rem 2.5rem;
@@ -11406,7 +11407,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("https://tec.edu.pk/pk/wp-content/uploads/2019/04/banner1.jpg");
+  background-image: url("https://tec.edu.pk/pk/wp-content/uploads/2019/04/slider-primary.jpg'");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11428,10 +11429,6 @@ header.masthead .masthead-heading {
 }
 
 @media (min-width: 768px) {
-  header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
-  }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
@@ -11814,7 +11811,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   overflow: hidden;
   list-style: none;
   position: relative;
-
+    
   -webkit-transition: transform .5s;
   -moz-transition: transform .5s;
   -o-transition: transform .5s;
@@ -11835,14 +11832,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 1.3em;
   font-weight: bold;
 }
-.carrousel li img {
-  width: 3em;
-  height: 3em;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-left: -1.5em;
-  margin-right: 0.5em;
-  vertical-align: middle;
+.carrousel li img{
+  width: 300px;
+  height: 300px;
 }
 .carrousel li span.author {
   margin-top:0.5em;
@@ -11912,6 +11904,9 @@ TODO: make it easier with SCSS
   }
 }
 @media  (max-width: 480px) {
+  .carousel-item.active, .carousel-item-next, .carousel-item-prev{
+   flex-wrap: wrap;
+  }
   .carrousel li p {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -11919,12 +11914,26 @@ TODO: make it easier with SCSS
   .carrousel li q {
       font-size: 1em;
   }
-  .carrousel li img {
-     width:2em;
-     margin-left: -1em;
-     margin-right: 0.25em;
-  }
+
 }
 .video-js{
   margin: 12px;
+}
+@media (max-width : 468px)
+{
+ .video-js{
+    flex-basis: 100%;
+    margin: 10px 0px;
+
+  }
+  .carrousel .slides {
+    position: absolute;
+    top: 5vh;
+  }
+  .carrousel li img {
+    width: 300px;
+  }
+  .carrousel li h5{
+    font-size: 0.8rem;
+  }
 }

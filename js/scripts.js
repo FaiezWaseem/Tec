@@ -83,9 +83,9 @@ function checked_dot($){
     print(bg)
 if($.checked){
     if(val.includes('1')){
-        bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2019/04/banner1.jpg')";
-    }else if (val.includes('2')){
         bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2019/04/slider-primary.jpg')";
+    }else if (val.includes('2')){
+        bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2019/04/banner1.jpg')";
     }else if (val.includes('3')){
         bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2016/11/students-1807505_1920-1.jpg')";
     }else {
