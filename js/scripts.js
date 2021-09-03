@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Agency v7.0.6 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -55,6 +47,9 @@ window.addEventListener('DOMContentLoaded', event => {
 function get($){
     return document.querySelectorAll($);
 }
+function print($){
+ console.log($)
+}
 function testimonialsChange(elem){
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
@@ -81,4 +76,20 @@ else{
     prev.setAttribute('active-testimonial','crousel1')
   }
 
+}
+function checked_dot($){
+    bg = get('.masthead')
+    val = $.getAttribute('id')
+    print(bg)
+if($.checked){
+    if(val.includes('1')){
+        bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2019/04/banner1.jpg')";
+    }else if (val.includes('2')){
+        bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2019/04/slider-primary.jpg')";
+    }else if (val.includes('3')){
+        bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2016/11/students-1807505_1920-1.jpg')";
+    }else {
+        bg[0].style.backgroundImage = "url('https://tec.edu.pk/pk/wp-content/uploads/2019/04/slider-primary.jpg')";
+    }
+}
 }

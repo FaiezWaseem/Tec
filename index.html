@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Video js Css -->
+        <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -47,68 +49,52 @@
 
 
         <!-- Masthead-->
-        <header class="masthead mt-5">
+        <header class="masthead mt-5 carrousel">
             <div class="container">
-                <div class="masthead-subheading">It's Nice To Meet You</div>
-                <div class="masthead-heading text-uppercase">Welcome To Tec!</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#whychooseus">Tell Me More</a>
+                <h2>Title</h2>						
+                <input type="radio" name="slides" id="radio-1" onchange="checked_dot(this)" checked>
+                <input type="radio" name="slides" id="radio-2"  onchange="checked_dot(this)">
+                <input type="radio" name="slides" id="radio-3"  onchange="checked_dot(this)">
+                <input type="radio" name="slides" id="radio-4"  onchange="checked_dot(this)">
+                <ul class="slides">
+                   <li class="slide">
+                      <p>
+                         <q>It was a pleasure to work with him</q> 
+                      </p>
+                     </li>        
+                      <li class="slide">
+                        <p>
+                          <q>He is a good friend of mine</q> 
+                        </p>
+                     </li>
+                    <li class="slide">
+                       <p>
+                          <q>This is pretty cool</q> 
+                       </p>
+                    </li>
+                    <li class="slide">
+                      <p>
+                        <q>This is awesome. Only Css you say?</q> 
+                      </p>
+                     </li>
+                </ul>
+                <div class="slidesNavigation">
+                  <label for="radio-1" id="dotForRadio-1"></label>
+                  <label for="radio-2" id="dotForRadio-2"></label>
+                  <label for="radio-3" id="dotForRadio-3"></label>
+                  <label for="radio-4" id="dotForRadio-4"></label>
+                </div>
+      	
             </div>
         </header>
         <!-- Masthead -->
 
 
 
-        <!-- gallery -->
-       <div class="container-fluid mt-5  mb-5">
-    <div class="jumbotron text-center">
-      <h1>Photo Gallery</h1>
-     </div>
-    
-    <div class="row gallery">
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-        <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.08 PM.jpeg">
-          <img class="img-fluid"src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.08 PM.jpeg">
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-        <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.11 PM.jpeg">
-          <img class="img-fluid"src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.11 PM.jpeg">
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-        <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.14 PM.jpeg">
-          <img class="img-fluid"src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.14 PM.jpeg">
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-        <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.20 PM.jpeg">
-          <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.20 PM.jpeg">
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-        <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.15 PM (1).jpeg">
-          <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.15 PM (1).jpeg">
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-        <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.19 PM.jpeg">
-          <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.19 PM.jpeg">
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-        <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.18 PM.jpeg">
-          <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.18 PM.jpeg">
-        </a>
-      </div>
-    </div>
-       </div>
-        <!-- Gallery finished-->
-
-
-        <!-- E-projects -->
-        <section class="container text-center">
+        <!-- Our Services -->
+        <section class="container text-center"> 
             <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold my-5">E-Content & E-Resources</h2>
+            <h2 class="h1-responsive font-weight-bold my-5">Our Services</h2>
             <!-- Section description -->
             <p class="large text-muted w-responsive mx-auto mb-5">E-Content and E-Resources which includes interactive animations, worksheets, books, topical hands, etc.</p>
             
@@ -119,7 +105,7 @@
               <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
                 <!--Featured image-->
                 <div class="view overlay rounded z-depth-1">
-                  <img src="./assets/img/services/LMS.png" class="img-fluid" alt="Sample project image">
+                  <img src="./assets/LMS.jpg" class="img-fluid" alt="lMS">
                   <a>
                     <div class="mask rgba-white-slight"></div>
                   </a>
@@ -138,14 +124,14 @@
               <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
                 <!--Featured image-->
                 <div class="view overlay rounded z-depth-1">
-                  <img src="./assets/img/services/schl.png" class="img-fluid" alt="Sample project image">
+                  <img src="./assets/SMS.jpg" class="img-fluid" alt="SMS">
                   <a>
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
                 <!--Excerpt-->
                 <div class="card-body pb-0">
-                  <h4 class="font-weight-bold my-3">Home Schooling</h4>
+                  <h4 class="font-weight-bold my-3">School Management System(SMS)</h4>
                   <p class="large text-muted">We are accessible to every house through e-learning which facilitates with home schooling.
                   </p>
                   <a class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i> Read More</a>
@@ -157,7 +143,7 @@
               <div class="col-lg-4 col-md-6">
                 <!--Featured image-->
                 <div class="view overlay rounded z-depth-1">
-                  <img src="./assets/img/services/cbts.png" class="img-fluid" alt="Sample project image">
+                  <img src="./assets/CBTS.jpg" class="img-fluid" alt="CBTS">
                   <a>
                     <div class="mask rgba-white-slight"></div>
                   </a>
@@ -172,7 +158,7 @@
               </div>
               <!-- Grid column -->
                     </section>
-                    <!-- E- Projects -->
+       <!-- Our Services -->
 
 
 
@@ -388,16 +374,69 @@
 
         <!-- Video -->
         <section class="mb-5 video" style="display: flex; justify-content: center;">
-               <video src="./assets/video/Dept Of e-learning.mp4" controls></video>
-               <video src="./assets/video/Lightening Board Yasmeen video 1.mp4" controls></video>
-               <video src="./assets/video/Teacher Resources Video.mp4" controls></video>
-               <video src="./assets/video/Online Classes Videos.mp4" controls></video>
+          <video style="flex-basis: 40%;"
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          height="400px"
+          data-setup="{}"
+        >
+          <source src="./assets/video/Dept Of e-learning.mp4" type="video/mp4" />
+      
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading your browser
+          </p>
+        </video>
+          <video style="flex-basis: 40%;"
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          height="400px"
+          data-setup="{}"
+        >
+          <source src="./assets/video/Lightening Board Yasmeen video 1.mp4" type="video/mp4" />
+      
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading your browser
+          </p>
+        </video>
+          <video style="flex-basis: 40%;"
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          height="400px"
+          data-setup="{}"
+        >
+          <source src="./assets/video/Teacher Resources Video.mp4" type="video/mp4" />
+      
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading your browser
+          </p>
+        </video>
+          <video style="flex-basis: 40%;"
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          height="400px"
+          data-setup="{}"
+        >
+          <source src="./assets/video/Online Classes Videos.mp4" type="video/mp4" />
+      
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading your browser
+          </p>
+        </video>
+
         </section>
 
 
 
         <!-- Testimonial -->
- <h1 class="text-center  mb-5" id="testimonials">Testimonials</h1>
+ <h1 class="text-center  mb-5" id="testimonials">Reviews</h1>
 <div
 id="carouselExampleControls"
 class="carousel slide text-center carousel-dark mb-5"
@@ -640,23 +679,11 @@ e-Learning Faculty
           </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="    color: red;
-    font-size: 2rem;">
-        <i class="fas fa-arrow-circle-left"></i>
-    </span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true" style="    color: red;
-    font-size: 2rem;">
-        <i class="fas fa-arrow-circle-right"></i>
-    </span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
   </div>
 <!-- e-Learning Faculty -->
+
+
         <!-- Contact-->
 <section class="page-section" id="contact">
             <div class="container">
@@ -714,6 +741,53 @@ e-Learning Faculty
                 </form>
             </div>
 </section>
+<!-- Contact -->
+
+     <!-- gallery -->
+     <div class="container-fluid mt-5  mb-5">
+      <div class="jumbotron text-center">
+        <h1>Photo Gallery</h1>
+       </div>
+      
+      <div class="row gallery">
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+          <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.08 PM.jpeg">
+            <img class="img-fluid"src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.08 PM.jpeg">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+          <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.11 PM.jpeg">
+            <img class="img-fluid"src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.11 PM.jpeg">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+          <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.14 PM.jpeg">
+            <img class="img-fluid"src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.14 PM.jpeg">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+          <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.20 PM.jpeg">
+            <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.20 PM.jpeg">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+          <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.15 PM (1).jpeg">
+            <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.15 PM (1).jpeg">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+          <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.19 PM.jpeg">
+            <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.19 PM.jpeg">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+          <a href="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.18 PM.jpeg">
+            <img class="img-fluid" src="./assets/pic/WhatsApp Image 2021-08-31 at 8.40.18 PM.jpeg">
+          </a>
+        </div>
+      </div>
+         </div>
+ <!-- Gallery finished-->
 
 
 
@@ -725,7 +799,6 @@ e-Learning Faculty
                     <div class="col-lg-4 my-3 my-lg-0">
                         
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fad fa-browser"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
@@ -741,7 +814,7 @@ e-Learning Faculty
 
                          <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-
+  <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
   <script>
