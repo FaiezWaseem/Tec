@@ -6,16 +6,18 @@
         <meta name="description" content="Tec Education" />
         <meta name="author" content="Tec" />
         <title>Tec</title>
-        <!-- Buggati css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- baguettebox css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
         <!-- Video js Css -->
         <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+        <!-- Font Awesome -->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- jQueyy -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -47,55 +49,59 @@
         </nav>
         <!-- Navigation -->
 
-
+<br>
+<br>
+<br>
         <!-- Masthead-->
-        <header class="masthead mt-5 carrousel">
-            <div class="container">
-               						
-                <input type="radio" name="slides" id="radio-1" onchange="checked_dot(this)" checked>
-                <input type="radio" name="slides" id="radio-2"  onchange="checked_dot(this)">
-                <input type="radio" name="slides" id="radio-3"  onchange="checked_dot(this)">
-                <input type="radio" name="slides" id="radio-4"  onchange="checked_dot(this)">
-                <ul class="slides">
-                   <li class="slide">
-                     <div class="row">
-                       <h3 style="color: gold;">Mission Statement</h3>
-                       <div class="col-md-6">
-                        <img src="./assets/akbar khursheed.png" alt="">
-                        <h6>Akber Khursheed</h6>
-                        <h6>(Director)</h6>
-                      </div>
-                       <div class="col-md-6 d-flex justify-content-center align-items-center">
-                     <h5>
-                       Tec's main objective is the reform of Education in Pakistan & Excellence in Education. We aimed to correlate our existing Education System compatible with the challenges of 21st Century Schooling.
-                     </h5>
-                      </div>
-                     </div>
-                     </li>        
-                      <li class="slide">
-                        <p>
-                          <q>He is a good friend of mine</q> 
-                        </p>
-                     </li>
-                    <li class="slide">
-                       <p>
-                          <q>This is pretty cool</q> 
-                       </p>
-                    </li>
-                    <li class="slide">
-                      <p>
-                        <q>This is awesome. Only Css you say?</q> 
-                      </p>
-                     </li>
-                </ul>
-                <div class="slidesNavigation">
-                  <label for="radio-1" id="dotForRadio-1"></label>
-                  <label for="radio-2" id="dotForRadio-2"></label>
-                  <label for="radio-3" id="dotForRadio-3"></label>
-                  <label for="radio-4" id="dotForRadio-4"></label>
+        <header class="conatiner d-flex justify-content-center align-items-center mt-5">
+          <div class="slider-top">
+
+          
+            <div class="slides">
+              <div id="slide-1">
+                <div class="row w-100 h-auto">
+                  <h1 class="tec">Mission Statement</h1>
+                  <div class="col-md-6">
+                    <img src="./assets/akbar khursheed.png" alt="">
+                    <h3 class="tec">Akbar Khursheed</h3>
+                    <h6 class="tec">Director</h6>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <p class="tec"> Tec's main objective is the reform of Education in Pakistan & Excellence in Education. We aimed to correlate our existing Education System compatible with the challenges of 21st Century Schooling.
+                    </p>
+                  </div>
                 </div>
-      	
+              </div>
+              <div id="slide-2">
+                <div class="row">
+                  <h1 class="tec">E-Learning Concepts</h1>
+                  <div class="col-12">
+                    <img src="./assets/e-learn-crousel.PNG" alt="">
+                  </div>
+                </div>
+              </div>
+              <div id="slide-3">
+                <div class="row">
+                  <h1 class=".tec">E- Learning Project  ~ SUI</h1>
+                  <div class="col-md-6">
+                    <img src="./assets/sui-project-crousel.PNG" alt="">
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <p class="tec">
+                      Sui Model School & Girls College in Balochistan is Being Served On-Line by  
+                      <span class="tec">
+
+                        Tec - The Education Consultancy
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+          </div>
         </header>
         <!-- Masthead -->
 
@@ -111,7 +117,7 @@
             <!-- Grid row -->
             <div class="row text-center">
             
-              <!-- Grid column -->
+              <!-- Grid column  LMS-->
               <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
                 <!--Featured image-->
                 <div class="view overlay rounded z-depth-1">
@@ -125,12 +131,12 @@
                   <h4 class="font-weight-bold my-3">Learning Management System (LMS)</h4>
                   <p class="large text-muted">Learning Management System (LMS) work as central repositories to address all types of educational needs. The major areas addressed by LMS are:
                   </p>
-                  <a class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i> Read More</a>
+                  <a class="btn btn-indigo btn-sm" href="./LMS/"><i class="fas fa-clone left"></i> Read More</a>
                 </div>
               </div>
               <!-- Grid column -->
             
-              <!-- Grid column -->
+              <!-- Grid column  SMS-->
               <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
                 <!--Featured image-->
                 <div class="view overlay rounded z-depth-1">
@@ -144,12 +150,12 @@
                   <h4 class="font-weight-bold my-3">School Management System(SMS)</h4>
                   <p class="large text-muted">We are accessible to every house through e-learning which facilitates with home schooling.
                   </p>
-                  <a class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i> Read More</a>
+                  <a class="btn btn-indigo btn-sm" href="./SMS/" ><i class="fas fa-clone left"></i> Read More</a>
                 </div>
               </div>
               <!-- Grid column -->
             
-              <!-- Grid column -->
+              <!-- Grid column CBTS-->
               <div class="col-lg-4 col-md-6">
                 <!--Featured image-->
                 <div class="view overlay rounded z-depth-1">
@@ -163,7 +169,7 @@
                   <h4 class="font-weight-bold my-3">Computer Based Testing System(CBTS)</h4>
                   <p class="large text-muted">CBTS gives a separate reports, results and details of all subjects from different examination board through the online conduction of tests.
                   </p>
-                  <a class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i> Read More</a>
+                  <a class="btn btn-indigo btn-sm" href="./CBTS/"><i class="fas fa-clone left"></i> Read More</a>
                 </div>
               </div>
               <!-- Grid column -->
@@ -699,7 +705,6 @@ e-Learning Faculty
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <form id="contactForm">
                     <div class="row align-items-stretch mb-5">
@@ -729,16 +734,13 @@ e-Learning Faculty
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
+              
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                             <div class="fw-bolder">Form submission successful!</div>
                             To activate this form, sign up at
                             <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                         
                         </div>
                     </div>
                     <!-- Submit error message-->
@@ -820,7 +822,7 @@ e-Learning Faculty
             </div>
 </footer>
 <!-- Footer -->
-
+<!-- Services Section Modal -->
 
                          <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>

@@ -6988,6 +6988,9 @@ textarea.form-control-lg {
 .vh-100 {
   height: 100vh !important;
 }
+.vh-75 {
+  height: 75vh !important;
+}
 
 .min-vh-100 {
   min-height: 100vh !important;
@@ -11877,7 +11880,7 @@ TODO: make it easier with SCSS
   transform: translateX(0%);
 }
 #radio-2:checked ~ .slides {
-  transform: translateX(-25%);
+  transform: translateX(-28%);
 }
 #radio-3:checked ~ .slides {
   transform: translateX(-50%);
@@ -11930,10 +11933,137 @@ TODO: make it easier with SCSS
     position: absolute;
     top: 5vh;
   }
-  .carrousel li img {
-    width: 300px;
+}
+
+/*----------*/
+.slider-top {
+  width: 100vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 500px;
+  margin-right: 50px;
+  background-image: url('https://tec.edu.pk/pk/wp-content/uploads/2019/04/slider-primary.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+#slide-1 img{
+  width: 300px;
+  height: 300px;
+}
+.slider-top p{
+  font-size: 1.3rem;
+}
+.slider-top > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider-top > a:active {
+  top: 1px;
+}
+.slider-top > a:focus {
+  background: #000;
+}
+
+
+@media (max-width : 468px)
+{
+  #slide-1 img , #slide-2 img , #slide-3 img{
+    width: 200px;
+    height: 200px;
   }
-  .carrousel li h5{
-    font-size: 0.8rem;
+  .slider-top p{
+    font-size: 1rem;
   }
+}
+.tec{
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Services Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
