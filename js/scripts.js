@@ -65,12 +65,17 @@ const next = document.getElementById('next')
     prev.setAttribute('active-testimonial','crousel3')
 }else if (elem.getAttribute('active-testimonial') ===  'crousel3'){
     get('#crousel3')[0].classList.remove('active-testimonial')
-    get('#crousel1')[0].classList.add('active-testimonial')
-    next.setAttribute('active-testimonial','crousel1')
-    prev.setAttribute('active-testimonial','crousel1')
+    get('#crousel4')[0].classList.add('active-testimonial')
+    next.setAttribute('active-testimonial','crousel4')
+    prev.setAttribute('active-testimonial','crousel4')
+}else if (elem.getAttribute('active-testimonial') ===  'crousel4'){
+    get('#crousel4')[0].classList.remove('active-testimonial')
+    get('#crousel5')[0].classList.add('active-testimonial')
+    next.setAttribute('active-testimonial','crousel5')
+    prev.setAttribute('active-testimonial','crousel5')
 }
 else{
-    get('#crousel3')[0].classList.remove('active-testimonial')
+    get('#crousel5')[0].classList.remove('active-testimonial')
     get('#crousel1')[0].classList.add('active-testimonial')
     next.setAttribute('active-testimonial','crousel1')
     prev.setAttribute('active-testimonial','crousel1')
