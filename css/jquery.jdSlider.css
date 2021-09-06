@@ -45,7 +45,14 @@
 	width: 100%;
 	height: 500px;
 }
-
+.slider3-2 .slide-area li img{
+	width: 300px;
+	height: 300px;
+}
+.slider3-3 .slide-area li img   {
+	width: auto;
+	height: auto;
+}
 /* line 41, public/src/scss/jquery.jdSlider.scss */
 .jd-slider .prev, .jd-slider .next {
 	position: absolute;
