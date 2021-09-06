@@ -261,7 +261,7 @@
                 },
                 play: {
                     all: function () {
-                        if (_.slide.find('>*').css('float') !== 'none') _.slide.find('>*').css('display', 'block');
+                        if (_.slide.find('>*').css('float') !== 'none') _.slide.find('>*').css('display', 'flex');
                         _.setting().reset();
                         _.setting().init();
                         _.swipe().init();

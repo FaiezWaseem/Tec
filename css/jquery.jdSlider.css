@@ -32,6 +32,8 @@
 .jd-slider .slide-area li {
 	float: left;
 	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
 /* line 30, public/src/scss/jquery.jdSlider.scss */
@@ -184,5 +186,6 @@ margin: 0px 20px; */
 	.jd-slider .slide-area li ul{
 		font-size: 1.2rem !important;
 		line-height: 3ch !important;
+		margin: 0px 60vh !important;
 	}
 }
