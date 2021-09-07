@@ -208,10 +208,14 @@ margin: 0px 20px; */
 		width: 100vw;
 		flex-direction: column;
 	}
-	.jd-slider .slide-area li img{
-		height: auto;
+	.slider3-2 .slide-area li img{
+		height: 150px;
+	}
+	.slider2 .slide-area li img{
+		height: 300px;
 	}
 	.g{
 		height: 300px;
 	}
+
 }
