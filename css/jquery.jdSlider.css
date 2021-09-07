@@ -199,9 +199,6 @@ margin: 0px 20px; */
 	}
 }
 @media (max-width : 468px) {
-	.jd-slider .slide-area li img{
-		height: 300px;
-	}
 	.top-ul-li{
 		position: absolute;
 		top: 25vh;
