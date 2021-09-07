@@ -208,4 +208,10 @@ margin: 0px 20px; */
 		width: 100vw;
 		flex-direction: column;
 	}
+	.jd-slider .slide-area li img{
+		height: auto;
+	}
+	.g{
+		height: 300px;
+	}
 }
