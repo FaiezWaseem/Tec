@@ -13,12 +13,21 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+              <!-- baguettebox css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+      
         <!-- jQueyy -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
+        <style>
+            .gallery img {
+                 width: auto !important;
+                 height: auto !important;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -63,6 +72,15 @@
             <p style="word-wrap: break-word;">
                 Normal concept about testing procedure which requires the paper, then assessment of test paper, re-checking of assessment then result compiling.
             </p>
+            <div class="d-flex justify-content-center align-item-center mb-5 mt-5">
+                <div class="gallery h-auto">
+                    <a href="../assets/img/about/CBTS.PNG">
+                        <img  src="../assets/img/about/CBTS.PNG" height="auto">
+                      </a>
+
+                </div>
+                
+            </div>
             <p style="word-wrap: break-word;">
                 That, of course, is a high level description of the features that a modern LMS should offer ― useful as a general description, or if you’re ever asked that at a quiz show.
                 All these factors are time consuming with lot of efforts are required along with we can not eliminate the human error which is always there but in terms of CBTS we have shaped up virtual dreams in terms of reality and confined all these activities at your finger tips.
@@ -157,9 +175,14 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
 <script src="../js/scripts.js"></script>
-  </script>
+<script>
+          //Gallery Slider
+          baguetteBox.run(".gallery", {
+      animation: "slideIn"
+    });
+</script>
 
     </body>
 </html>
